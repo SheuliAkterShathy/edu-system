@@ -7,6 +7,7 @@ import Topic from './components/Topic/Topic';
 import Quiz from './components/Quiz/Quiz';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     {
       path:'/',
       element:<Main></Main>,
+      errorElement:<ErrorPage></ErrorPage>,
       children:[
         {
           path:'/',
