@@ -13,8 +13,8 @@ const Statistics = () => {
                 const single={
                     name:quiz.name,
                     total:quiz.total
-                
                 }
+                
                 return single;
             })
             setQuiz(quizData);
