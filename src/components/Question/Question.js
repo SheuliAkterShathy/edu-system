@@ -16,9 +16,7 @@ const Question = ({option}) => {
         toast.warning('Wrong Answer')
      }  
     }
-
-
-    const showCorrectAns=()=>{
+   const showCorrectAns=()=>{
        toast.success(option.correctAnswer)
        
     }

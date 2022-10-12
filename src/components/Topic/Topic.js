@@ -17,7 +17,7 @@ const handleQuiz=()=>{
        <h2 className="card-title">Name:{name}</h2>
       <p className='text-start'>Total Questions:{total}</p>
      <div className="card-actions justify-end">
-      <button className="btn btn-primary" onClick={()=>handleQuiz(id)}>Start Quiz</button>
+      <button className="btn bg-rose-500 border-none capitalize hover:bg-rose-700" onClick={()=>handleQuiz(id)}>Start Quiz</button>
     </div>
   </div>
 </div>

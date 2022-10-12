@@ -25,16 +25,20 @@ const Statistics = () => {
         
         <div>
             <h2 className='md:text-3xl font-bold mt-3'>Statistics on the basis of total quiz</h2>
-            <div className='flex items-center justify-center w-[90%]'>
+            <div className='flex items-center justify-center'>
            
-           <BarChart className='mt-12 ' width={400} height={400} data={quiz}>
+         <ResponsiveContainer width={'70%'} height={450}>
+             
+           <BarChart className='mt-5' data={quiz}>
          <Bar dataKey="total" fill="#ed919f" />
         <XAxis dataKey="name" />
          <YAxis />
          <Tooltip />
         </BarChart>
+         </ResponsiveContainer>
+          
        </div>
-         <h3 className='font-bold mr-6'>Figure:x-axis = name,YAxis = total </h3>
+         <h3 className='font-bold mt-5'>Figure:x-axis = name,YAxis = total </h3>
         </div>
     
     );
