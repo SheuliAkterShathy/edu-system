@@ -10,15 +10,15 @@ const Header = () => {
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
-      <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 font-bold">
-        <li><Link to ='/'>Home</Link></li>
+      <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-rose-300 rounded-box w-52 font-bold">
+        <li><Link to ='/' className='active:bg-rose-500'>Home</Link></li>
         <li tabIndex={0}>
-          <Link to='/' className="justify-between">
+          <Link to='/' className="justify-between active:bg-rose-500" >
             Topics
           </Link>
          </li>
-        <li><Link to='/statistics'>Statistics</Link></li>
-        <li><Link to='/blog'>Blog</Link></li>
+        <li><Link to='/statistics' className='active:bg-rose-500'>Statistics</Link></li>
+        <li><Link to='/blog' className='active:bg-rose-500'>Blog</Link></li>
       </ul>
     </div>
     
@@ -30,19 +30,18 @@ const Header = () => {
   </div>
   <div className="navbar-end hidden lg:flex">
     <ul className="menu menu-horizontal p-0 font-bold">
-      <li><Link to ='/'>Home</Link></li>
+    <li> <Link  to ='/' className='active:bg-rose-500'>Home</Link></li>
       <li tabIndex={0}>
-        <Link to='/'>
+        <Link to='/' className='active:bg-rose-500'>
           Topics
-          {/* <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg> */}
         </Link>
         
 
       </li>
-      <li><Link to='/statistics'>Statistics</Link>
+      <li><Link to='/statistics' className='active:bg-rose-500'>Statistics</Link>
       </li>
      
-      <li><Link to='/blog'>Blog</Link>
+      <li><Link to='/blog' className='active:bg-rose-500'>Blog</Link>
       </li>
     </ul>
   </div>

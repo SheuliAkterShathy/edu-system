@@ -25,7 +25,7 @@ const Question = ({option}) => {
     return (
         <div className='border bg-rose-200 my-5 w-[90%] mx-auto py-4'>
            
-           <div className='flex items-center justify-evenly'>
+           <div className='flex justify-evenly'>
            <h2 className='text-xl mb-4 max-w-[80%]'>{question}</h2>
             <EyeSlashIcon onClick={showCorrectAns} className="h-8 w-12  text-rose-700 hover:bg-blue-200"/>
            </div>
