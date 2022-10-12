@@ -1,9 +1,11 @@
 ### This Project is Educational Website.
 This project is created based on Education.The name of this Project is  "EduSystem".
 
-### All project link
+### Project link 1
  https://openapi.programming-hero.com/api/quiz
- https://openapi.programming-hero.com/api/quiz/${params.topicId}
+
+### Project link 2
+https://openapi.programming-hero.com/api/quiz/${params.topicId}
 
 ### Nav Description
 At top part there is a navbar and there is some routes.It will help to go different routes by clic.
